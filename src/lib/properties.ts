@@ -1,0 +1,251 @@
+export type Property = {
+  slug: string;
+  name: string;
+  location: string;
+  landArea: string;
+  towers: string;
+  floors: string;
+  units: string;
+  bhk: string;
+  area: string;
+  price: string;
+  pricing: string[];
+  status: "ongoing" | "completed";
+  statusLabel: string;
+  rera?: string;
+  tag?: string;
+};
+
+export const properties: Property[] = [
+  {
+    slug: "npr-visaaya",
+    name: "NPR Visaaya",
+    location: "Phoolbagan, EM Bypass",
+    landArea: "73 Katha",
+    towers: "1",
+    floors: "B+G+19",
+    units: "45",
+    bhk: "4 BHK, 5 BHK, Duplex, Triplex",
+    area: "3,100–4,100 sq ft",
+    price: "₹4.68 Cr onwards",
+    pricing: [
+      "4 BHK · 3,100–3,600 sq ft · ₹4.68 Cr onwards",
+      "5 BHK · 4,100 sq ft · ₹5.95 Cr onwards",
+    ],
+    status: "ongoing",
+    statusLabel: "Under Construction · December 2028",
+    rera: "WBRERA/P/KOL/2024/001349",
+    tag: "Featured",
+  },
+  {
+    slug: "primarc-aadvika",
+    name: "Primarc Aadvika",
+    location: "Foreshore Road, Howrah",
+    landArea: "3 Acres",
+    towers: "3",
+    floors: "G+24, G+25",
+    units: "182",
+    bhk: "3 BHK, 3.5 BHK, 4 BHK, 4.5 BHK, 5 BHK",
+    area: "1,539–3,346 sq ft",
+    price: "₹2.70 Cr onwards",
+    pricing: [
+      "3 BHK Simplex · 1,539–1,660 sq ft · ₹2.70 Cr onwards",
+      "3.5 BHK Simplex · 1,775–1,794 sq ft · ₹3 Cr onwards",
+      "4 BHK Simplex · 1,895–1,908 sq ft · ₹3.25 Cr onwards",
+      "4.5 BHK Simplex · 2,257–2,324 sq ft · ₹4.05 Cr onwards",
+      "5 BHK Simplex · 2,545–2,577 sq ft · ₹4.45 Cr onwards",
+      "3.5 BHK Duplex · 3,155 sq ft · ₹5.75 Cr onwards",
+      "4 BHK Duplex · 3,346 sq ft · ₹6.10 Cr onwards",
+    ],
+    status: "ongoing",
+    statusLabel: "Under Construction · December 2030",
+    rera: "WBRERA/P/HOW/2025/003467",
+    tag: "Featured",
+  },
+  {
+    slug: "mirania-evara",
+    name: "Mirania Evara",
+    location: "Metro Cash & Carry, EM Bypass",
+    landArea: "52 Katha",
+    towers: "1",
+    floors: "B+G+18",
+    units: "86",
+    bhk: "3 BHK, 4 BHK",
+    area: "1,500–2,500 sq ft",
+    price: "₹1.92 Cr onwards",
+    pricing: [
+      "3 BHK · 1,500–1,600 sq ft · ₹1.92 Cr onwards",
+      "4 BHK · 2,200–2,500 sq ft · ₹3 Cr onwards",
+    ],
+    status: "ongoing",
+    statusLabel: "Under Construction · June 2030",
+    rera: "WBRERA/P/KOL/2025/002422",
+  },
+  {
+    slug: "merlin-niyasa",
+    name: "Merlin Niyasa",
+    location: "Ruby, EM Bypass",
+    landArea: "3.23 Acres",
+    towers: "2",
+    floors: "G+28",
+    units: "152",
+    bhk: "3.5 BHK, 4 BHK, 4.5 BHK",
+    area: "1,996–3,299 sq ft",
+    price: "₹3.90 Cr onwards",
+    pricing: [
+      "3.5 BHK + 3T · 1,996 sq ft · ₹3.90 Cr onwards",
+      "4 BHK + 4T · 2,841 sq ft · ₹4.25 Cr onwards",
+      "4 BHK + Study + 4T · 3,299 sq ft · ₹4.90 Cr onwards",
+    ],
+    status: "ongoing",
+    statusLabel: "Under Construction · June 2030",
+    rera: "WBRERA/P/KOL/2024/002243",
+  },
+  {
+    slug: "nidhara",
+    name: "SKDJ Nidhara",
+    location: "Buroshibtalla, New Alipore",
+    landArea: "2.4 Acres",
+    towers: "3",
+    floors: "B+G+21, B+G+15",
+    units: "115",
+    bhk: "3 BHK, 4 BHK, 5 BHK",
+    area: "1,914–3,645 sq ft",
+    price: "₹2.40 Cr onwards",
+    pricing: [
+      "3 BHK · 1,914–3,097 sq ft · ₹2.40–3.70 Cr",
+      "4 BHK · 2,608–3,532 sq ft · ₹3.18–3.90 Cr",
+      "5 BHK · 3,627–3,645 sq ft · ₹4.46–4.50 Cr",
+    ],
+    status: "ongoing",
+    statusLabel: "Under Construction · December 2031",
+    rera: "WBRERA/P/KOL/2025/002345",
+  },
+  {
+    slug: "ps-aurus",
+    name: "PS Aurus",
+    location: "Science City, ITC Royal, EM Bypass",
+    landArea: "3.67 Acres",
+    towers: "2",
+    floors: "G+33, G+34",
+    units: "162",
+    bhk: "3 BHK, 4 BHK, 5 BHK",
+    area: "2,358–3,975 sq ft",
+    price: "Price on request",
+    pricing: [
+      "3 BHK + 3T · 2,358 sq ft · Price on request",
+      "4 BHK · 2,822 sq ft · Price on request",
+      "5 BHK Duplex · 3,975 sq ft · Price on request",
+    ],
+    status: "completed",
+    statusLabel: "Ready to Move",
+  },
+  {
+    slug: "ps-sansara",
+    name: "PS Sansara",
+    location: "Gola Bari, Howrah",
+    landArea: "17.41 Acres",
+    towers: "5",
+    floors: "G+38, G+40",
+    units: "700",
+    bhk: "3 BHK, 4 BHK, 4.5 BHK, 5 BHK",
+    area: "2,514–4,883 sq ft",
+    price: "₹3.50 Cr onwards",
+    pricing: [
+      "3 BHK · 2,514–2,580 sq ft · ₹3.50–3.75 Cr",
+      "4 BHK · 3,272 sq ft · ₹4.15–4.65 Cr",
+      "4.5 BHK + Study · 3,365 sq ft · ₹4.25–4.80 Cr",
+      "5 BHK Duplex · 4,883 sq ft · ₹6.15–6.75 Cr",
+    ],
+    status: "ongoing",
+    statusLabel: "Under Construction · October 2029",
+    rera: "WBRERA/P/HOW/2024/001857",
+  },
+  {
+    slug: "ps-quintessa",
+    name: "PS Quintessa",
+    location: "Kankurgachi, EM Bypass",
+    landArea: "87 Katha",
+    towers: "2",
+    floors: "G+16",
+    units: "80",
+    bhk: "4 BHK, 5 BHK, 6 BHK",
+    area: "2,354–6,049 sq ft",
+    price: "₹3.76 Cr onwards",
+    pricing: [
+      "4 BHK · 2,354–2,781 sq ft · ₹3.76 Cr onwards",
+      "5 BHK Duplex/Penthouse · 4,089–5,033 sq ft · ₹6.94 Cr onwards",
+      "6 BHK Duplex/Penthouse · 4,518–6,049 sq ft · ₹7.79 Cr onwards",
+    ],
+    status: "ongoing",
+    statusLabel: "Under Construction · April 2028",
+    rera: "WBRERA/P/KOL/2023/000776",
+  },
+  {
+    slug: "merlin-f-residencies",
+    name: "Merlin F Residency",
+    location: "Jogardanga More, Rajarhat",
+    landArea: "8 Acres",
+    towers: "10",
+    floors: "B+G+13, B+G+12",
+    units: "1,000",
+    bhk: "3 BHK, 4 BHK",
+    area: "1,074–1,555 sq ft",
+    price: "₹1.67 Cr onwards",
+    pricing: [
+      "3 BHK + 3T · 1,074–1,277 sq ft · ₹1.67 Cr onwards",
+      "4 BHK + 3T · 1,407–1,555 sq ft · ₹2.07 Cr onwards",
+    ],
+    status: "ongoing",
+    statusLabel: "Under Construction · June 2030",
+    rera: "WBRERA/P/NOR/2024/002220",
+  },
+  {
+    slug: "ps-navyom",
+    name: "PS Navyom",
+    location: "Buroshibtala, Alipore",
+    landArea: "7.42 Acres",
+    towers: "9",
+    floors: "B+G+11",
+    units: "292",
+    bhk: "4 BHK, 6 BHK",
+    area: "2,666–5,295 sq ft",
+    price: "Price on request",
+    pricing: [
+      "4 BHK · 2,666–2,970 sq ft · Price on request",
+      "4 BHK Simplex · 2,860 sq ft · Price on request",
+      "6 BHK Duplex · 5,295 sq ft · Price on request",
+    ],
+    status: "completed",
+    statusLabel: "Ready to Move",
+  },
+];
+
+export const flagships = [
+  {
+    slug: "vinayak-21-acres",
+    name: "Vinayak 21 Acres",
+    tagline: "A township woven into the land",
+    accent: "oklch(0.78 0.16 140)",
+  },
+  {
+    slug: "godrej-blue",
+    name: "Godrej Blue",
+    tagline: "A residence borrowed from the water",
+    accent: "oklch(0.7 0.18 235)",
+  },
+  {
+    slug: "hoabl-the-sarayu",
+    name: "HOABL The Sarayu",
+    tagline: "A pilgrimage you can invest in",
+    accent: "oklch(0.82 0.13 70)",
+  },
+] as const;
+
+export const locations = [
+  { name: "EM Bypass", count: 5 },
+  { name: "Howrah", count: 2 },
+  { name: "New Alipore", count: 1 },
+  { name: "Alipore", count: 1 },
+  { name: "Rajarhat", count: 1 },
+];
